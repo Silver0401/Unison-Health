@@ -1,0 +1,28 @@
+{
+  "name": "unison-health",
+  "version": "1.0.0",
+  "private": true,
+  "engines": { "node": "22.x" },
+  "scripts": {
+    "styles": "stylus src/styles/stylus/Index.styl --out src/styles/css",
+    "dev": "concurrently \"next dev\" \"stylus -w src/styles/stylus/Index.styl --out src/styles/css\"",
+    "build": "npm run styles && next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.2.7",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.15",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "concurrently": "8.2.2",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.7",
+    "stylus": "0.63.0",
+    "typescript": "5.5.4"
+  }
+}

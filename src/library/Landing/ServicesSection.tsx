@@ -1,0 +1,3 @@
+import ServiceCardCC from "@/components/ServiceCard-CC";
+import { services } from "@/library/Landing/landingContent";
+export default function ServicesSection() { return <section className="band" id="servicios" data-scene="niebla" aria-labelledby="t-serv"><div className="wrap"><p className="eyebrow rv">Servicios</p><h2 id="t-serv" className="section-title services-title rv">Empieza con el paquete integral. Después, el seguimiento que necesites.</h2><div className="services">{services.map((service) => <ServiceCardCC key={service.name} service={service}/>)}</div><p className="services-note rv">Precios en pesos mexicanos. Todas las consultas son en línea. Tú eliges cada mes si tu seguimiento es médico, nutricional o ambos.</p></div></section>; }

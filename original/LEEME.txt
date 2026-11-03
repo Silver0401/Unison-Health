@@ -1,0 +1,26 @@
+UNISON HEALTH · Página web (primera versión)
+
+Cómo abrirla
+- Abre index.html en cualquier navegador. Las imágenes están en la carpeta img/ (deja la carpeta junto al archivo).
+- Las tipografías (Outfit y DM Sans) se cargan desde Google Fonts, así que se necesita internet para verlas bien.
+- Es un solo archivo HTML con su CSS y JavaScript dentro; no usa frameworks ni dependencias.
+
+Pendientes para Isma
+1. Enlaces de agenda: todos los botones de agendar apuntan por ahora a
+   https://www.cronosmd.com/patientLanding
+   (encabezado, inicio, "Tu primera consulta", tarjeta del Paquete integral y sección Agenda).
+   Busca y reemplaza ese URL por el enlace directo a los calendarios, si es distinto.
+   El botón "¿Cómo funciona el expediente?" también usa ese URL.
+2. Aviso de privacidad: agregar el enlace en el pie de página cuando esté listo en Cronos MD.
+3. Aviso o permiso de publicidad COFEPRIS: agregar el número en el pie de página cuando lo tengan.
+4. Dominio y hosting: es una página estática, se puede subir tal cual (Netlify, Vercel, GitHub Pages, etc.).
+
+Dónde está cada cosa en index.html
+- Colores de marca: variables en :root al inicio del <style> (--cobalto, --azul, --coral, --niebla, --tinta).
+- Colores por sección: atributo data-scene en cada <section> (blanco, niebla, cobalto, tinta).
+  El fondo de la página cambia al hacer scroll según la sección que cruza la mitad de la pantalla.
+- Listones animados del fondo: script "Silk" al final del archivo. Las posiciones de los 3 listones
+  (médico, nutrióloga, paciente) están en la función F(), una formación por sección, en el mismo orden
+  que las secciones. Respeta "reducir movimiento" del sistema.
+- Servicios y precios: sección id="servicios".
+- Fotos: img/diana.jpg, img/ismael.jpg, img/expediente-3d.jpg.

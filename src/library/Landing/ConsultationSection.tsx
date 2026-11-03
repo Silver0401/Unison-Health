@@ -1,0 +1,3 @@
+import ButtonCC from "@/components/Button-CC";
+import { AGENDA_URL, steps } from "@/library/Landing/landingContent";
+export default function ConsultationSection() { return <section className="band" id="consulta" data-scene="niebla" aria-labelledby="t-consulta"><div className="wrap"><div className="steps-head rv"><div><p className="eyebrow">Tu primera consulta</p><h2 id="t-consulta" className="heading-spaced">Así trabajamos contigo, paso a paso.</h2></div><ButtonCC href={AGENDA_URL} target="_blank" rel="noopener">Agendar consulta</ButtonCC></div><ol className="steps">{steps.map(([title, text]) => <li className="rv" key={title}><h3>{title}</h3><p>{text}</p></li>)}</ol></div></section>; }
