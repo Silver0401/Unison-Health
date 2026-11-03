@@ -7,3 +7,4 @@
 - Outfit y DM Sans se cargan con `next/font/google` y se exponen mediante `--display` y `--body`.
 - La animación Silk y el canvas del hero viven en componentes cliente para controlar el ciclo de vida con `useEffect`.
 - Los pendentes del LEEME se mantienen como constantes con TODO en `src/library/Landing/landingContent.ts`.
+- El lienzo Silk mantiene las escenas y el soporte de movimiento reducido, con una implementación React que debe validarse visualmente contra el algoritmo de referencia antes de publicación.
