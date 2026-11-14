@@ -1254,6 +1254,9 @@ footer .wrap {
   .booking-panel:hover .booking-portrait img {
     transform: scale(1.035);
   }
+  .booking-panel--ismael:hover .booking-portrait img {
+    transform: scale(1.22);
+  }
   .booking-panel:hover .booking-arrow svg {
     transform: translateX(3px);
   }
