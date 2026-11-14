@@ -1164,7 +1164,8 @@ footer .wrap {
   transition: transform 900ms var(--booking-ease);
 }
 .booking-panel--ismael .booking-portrait img {
-  object-position: 50% 58%;
+  object-position: 50% 70%;
+  transform: scale(1.12);
 }
 .booking-portrait::after {
   content: "";
@@ -1374,7 +1375,8 @@ footer .wrap {
     object-position: 50% 24%;
   }
   .booking-panel--ismael .booking-portrait img {
-    object-position: 50% 57%;
+    object-position: 50% 54%;
+    transform: scale(1.06);
   }
 }
 @media (prefers-reduced-motion: reduce) {
