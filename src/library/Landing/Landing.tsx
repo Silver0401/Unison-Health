@@ -10,4 +10,4 @@ import RecordSection from "@/library/Landing/RecordSection";
 import ServicesSection from "@/library/Landing/ServicesSection";
 import SilkCanvas from "@/library/Landing/SilkCanvas";
 import TeamSection from "@/library/Landing/TeamSection";
-export default function Landing() { return <><LandingEffects/><SilkCanvas/><HeaderCC/><main><HeroSection/><ProblemSection/><HowSection/><RecordSection/><ConsultationSection/><TeamSection/><ServicesSection/><CtaSection/></main><FooterCC/></>; }
+export default function Landing() { return <><LandingEffects/><SilkCanvas/><HeaderCC/><main><HeroSection/><ProblemSection/><HowSection/><ConsultationSection/><RecordSection/><TeamSection/><ServicesSection/><CtaSection/></main><FooterCC/></>; }
