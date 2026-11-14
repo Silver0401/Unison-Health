@@ -692,6 +692,9 @@ footer .wrap {
   position: relative;
   overflow: hidden;
 }
+.team .person:first-child .photo img {
+  transform: scale(1.15);
+}
 .person h3 {
   font-size: 26px;
 }
