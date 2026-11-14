@@ -1,5 +1,11 @@
 # Progreso
 
+## 2026-11-11
+
+- Generadas tres tarjetas PNG de paquetes en `public/img/paquetes/`, formato cuadrado `600×600`: Consulta Integral ($2,200 MXN), Consulta Médica ($400 MXN) y Asesoría Médico-Tecnológica ($500 MXN).
+- La composición toma como referencia las tarjetas de suscripción de CronosMD: marco, retícula, órbitas, fondo nocturno y jerarquía de precio; el logo y copy corresponden a Unison Health.
+- Se añadió el modelo anatómico 3D como elemento mediano dentro del círculo derecho, manteniendo libre la zona central para la foto de perfil.
+
 ## 2026-11-03
 
 - Creado el proyecto Next.js en la raíz, conservando `original/` sin modificaciones.

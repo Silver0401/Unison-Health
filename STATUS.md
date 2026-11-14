@@ -17,6 +17,12 @@
 - Añadir las tres URLs definitivas en `src/library/Booking/bookingContent.ts` (inicial, seguimiento médico y nutricional).
 - Completar `PRIVACY_URL` y `COFEPRIS_PERMIT` en `landingContent.ts`; el pie los oculta mientras estén vacíos.
 
+## Activos de paquetes
+
+- Tarjetas PNG cuadradas en `public/img/paquetes/`: Consulta Integral ($2,200 MXN), Consulta Médica ($400 MXN) y Asesoría Médico-Tecnológica ($500 MXN).
+- Fuente reproducible en `public/img/paquetes/paquetes.html`, con la identidad de Unison Health y la composición visual de las tarjetas de suscripción de CronosMD.
+- Las tarjetas incluyen el modelo anatómico 3D recortado de `public/img/expediente-3d.jpg` como elemento mediano dentro del círculo derecho.
+
 ## Agenda — 2026-11-13
 
 - Nueva ruta `/agendar`, dos pasos a pantalla completa y header compartido. Ocho enlaces de la landing actualizados.

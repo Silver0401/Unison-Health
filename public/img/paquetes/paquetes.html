@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Paquetes Unison Health</title>
+  <style>
+    @page { size: 600px 600px; margin: 0; }
+    * { box-sizing: border-box; }
+    html, body { width: 600px; height: 600px; margin: 0; overflow: hidden; background: #0f172a; }
+    body { font-family: "Avenir Next", "Segoe UI", Arial, sans-serif; color: #fff; }
+    .card { display: none; position: relative; width: 600px; height: 600px; overflow: hidden; padding: 30px 34px 28px; background: linear-gradient(145deg, #172b67 0%, #1e40af 43%, #0f172a 100%); }
+    .card:target, body:not(:has(.card:target)) .card:first-child { display: block; }
+    .card::before { content: ""; position: absolute; inset: 18px; border: 1px solid rgba(255,255,255,.22); border-radius: 17px; pointer-events: none; }
+    .card::after { display: none; }
+    .dots { position: absolute; inset: 0; opacity: .20; background-image: radial-gradient(rgba(255,255,255,.48) 1px, transparent 1px); background-size: 18px 18px; mask-image: linear-gradient(135deg, rgba(0,0,0,.9), transparent 72%); }
+    .bottom-orbit { display: none; }
+    .orb { position: absolute; z-index: 0; border-radius: 50%; pointer-events: none; }
+    .orb.one { width: 500px; height: 500px; right: -145px; top: 48px; border: 2px solid rgba(169,196,255,.46); background: rgba(169,196,255,.06); }
+    .orb.two { width: 365px; height: 365px; right: -72px; top: 116px; border: 2px solid rgba(169,196,255,.34); background: rgba(169,196,255,.045); }
+    .orb.three { width: 235px; height: 235px; right: -5px; top: 181px; border: 2px solid rgba(255,122,89,.56); background: rgba(255,122,89,.08); }
+    .model3d { position: absolute; z-index: 1; top: 166px; right: 38px; width: 156px; height: 300px; object-fit: cover; object-position: center; border-radius: 50%; opacity: .92; mix-blend-mode: screen; filter: saturate(1.15) contrast(1.05); pointer-events: none; }
+    .content { position: relative; z-index: 2; height: 100%; display: flex; flex-direction: column; }
+    .brand { display: flex; align-items: center; justify-content: flex-start; gap: 10px; margin-top: 4px; color: #fff; font-size: 25px; font-weight: 700; letter-spacing: .02em; }
+    .brand small { color: #a9c4ff; font-size: 13px; font-weight: 600; margin-left: -7px; align-self: flex-start; margin-top: 4px; }
+    .brand svg { width: 29px; height: 29px; }
+    .cronos-logo { position: absolute; top: 38px; right: 42px; z-index: 1; width: 118px; height: auto; opacity: .9; }
+    .eyebrow { width: 245px; margin-top: 55px; text-align: left; color: #cfdbff; font-size: 11px; font-weight: 600; letter-spacing: .20em; }
+    h1 { width: 245px; margin: 15px 0 14px; text-align: left; color: #fff; font-size: 36px; line-height: .98; letter-spacing: -.04em; font-weight: 800; }
+    .integral h1 { font-size: 32px; }
+    .tech h1 { font-size: 27px; line-height: 1.04; }
+    .rule { display: flex; align-items: center; justify-content: flex-start; gap: 8px; margin: 0 0 24px; width: 210px; }
+    .rule span { height: 2px; flex: 1; background: linear-gradient(90deg, transparent, #5b8def); }
+    .rule span:last-child { background: linear-gradient(90deg, #5b8def, transparent); }
+    .rule i { width: 8px; height: 8px; border-radius: 50%; background: #ff7a59; box-shadow: 0 0 14px #ff7a59; }
+    ul { display: none; }
+    li { display: flex; align-items: flex-start; gap: 10px; color: #eef3ff; font-size: 16px; line-height: 1.18; }
+    li::before { content: "✓"; display: grid; place-items: center; flex: 0 0 18px; height: 18px; border: 2px solid #ff7a59; border-radius: 50%; color: #ffb09b; font-size: 11px; font-weight: 800; }
+    .price-block { width: 255px; margin-top: auto; text-align: left; }
+    .price { color: #fff; font-size: 38px; line-height: 1; font-weight: 800; letter-spacing: -.04em; }
+    .terms { margin-top: 8px; color: #cfdbff; font-size: 11px; font-weight: 600; letter-spacing: .16em; }
+    .mark { position: absolute; right: 32px; bottom: 17px; z-index: 0; color: rgba(255,255,255,.07); font-size: 100px; line-height: .65; font-weight: 800; transform: rotate(12deg); }
+  </style>
+</head>
+<body>
+  <article class="card integral" id="consulta-integral">
+    <div class="dots"></div><div class="orb one"></div><div class="orb two"></div><div class="orb three"></div><img class="model3d" src="modelo-3d.jpg" alt="Modelo anatómico 3D"><div class="bottom-orbit"></div><div class="mark">U</div>
+    <div class="content">
+      <div class="brand"><svg viewBox="4 4 92 88" aria-hidden="true"><path d="M18 12 V52 A32 32 0 0 0 50 84" fill="none" stroke="#5b8def" stroke-width="10" stroke-linecap="round"/><path d="M82 12 V52 A32 32 0 0 1 50 84" fill="none" stroke="#a9c4ff" stroke-width="10" stroke-linecap="round"/><circle cx="50" cy="40" r="11" fill="#ff7a59"/></svg><span>unison</span><small>health</small></div><img class="cronos-logo" src="cronos-completo-duotono-blanco.png" alt="CronosMD">
+      <div class="eyebrow">PAQUETE DE INICIO</div>
+      <h1>CONSULTA INTEGRAL</h1>
+      <div class="rule"><span></span><i></i><span></span></div>
+      <ul><li>Consulta médica y de nutrición</li><li>Un solo plan para tu salud</li><li>Expediente digital personalizado</li></ul>
+      <div class="price-block"><div class="price">$2,200 MXN</div><div class="terms">PAGO ÚNICO · 2 CONSULTAS</div></div>
+    </div>
+  </article>
+  <article class="card" id="consulta-medica">
+    <div class="dots"></div><div class="orb one"></div><div class="orb two"></div><div class="orb three"></div><img class="model3d" src="modelo-3d.jpg" alt="Modelo anatómico 3D"><div class="bottom-orbit"></div><div class="mark">U</div>
+    <div class="content">
+      <div class="brand"><svg viewBox="4 4 92 88" aria-hidden="true"><path d="M18 12 V52 A32 32 0 0 0 50 84" fill="none" stroke="#5b8def" stroke-width="10" stroke-linecap="round"/><path d="M82 12 V52 A32 32 0 0 1 50 84" fill="none" stroke="#a9c4ff" stroke-width="10" stroke-linecap="round"/><circle cx="50" cy="40" r="11" fill="#ff7a59"/></svg><span>unison</span><small>health</small></div><img class="cronos-logo" src="cronos-completo-duotono-blanco.png" alt="CronosMD">
+      <div class="eyebrow">ATENCIÓN MÉDICA</div>
+      <h1>CONSULTA MÉDICA</h1>
+      <div class="rule"><span></span><i></i><span></span></div>
+      <ul><li>Revisión de síntomas y evolución</li><li>Interpretación de estudios</li><li>Ajuste de tratamiento y receta</li></ul>
+      <div class="price-block"><div class="price">$400 MXN</div><div class="terms">POR CONSULTA</div></div>
+    </div>
+  </article>
+  <article class="card tech" id="asesoria-medico-tecnologica">
+    <div class="dots"></div><div class="orb one"></div><div class="orb two"></div><div class="orb three"></div><img class="model3d" src="modelo-3d.jpg" alt="Modelo anatómico 3D"><div class="bottom-orbit"></div><div class="mark">U</div>
+    <div class="content">
+      <div class="brand"><svg viewBox="4 4 92 88" aria-hidden="true"><path d="M18 12 V52 A32 32 0 0 0 50 84" fill="none" stroke="#5b8def" stroke-width="10" stroke-linecap="round"/><path d="M82 12 V52 A32 32 0 0 1 50 84" fill="none" stroke="#a9c4ff" stroke-width="10" stroke-linecap="round"/><circle cx="50" cy="40" r="11" fill="#ff7a59"/></svg><span>unison</span><small>health</small></div><img class="cronos-logo" src="cronos-completo-duotono-blanco.png" alt="CronosMD">
+      <div class="eyebrow">TECNOLOGÍA PARA TU CONSULTA</div>
+      <h1>ASESORÍA MÉDICO-<br>TECNOLÓGICA</h1>
+      <div class="rule"><span></span><i></i><span></span></div>
+      <ul><li>Orientación para digitalizar tu práctica</li><li>Flujos y herramientas a tu medida</li><li>Decisiones claras, sin tecnicismos</li></ul>
+      <div class="price-block"><div class="price">$500 MXN</div><div class="terms">POR SESIÓN</div></div>
+    </div>
+  </article>
+</body>
+</html>
