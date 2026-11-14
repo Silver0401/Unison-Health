@@ -10,3 +10,10 @@
 - El lienzo Silk mantiene las escenas y el soporte de movimiento reducido; su implementación React quedó validada visualmente contra el algoritmo de referencia.
 - Silk se conserva a 75% de rasterización como la referencia, con backing store escalado por DPR para mantener la misma geometría y mejorar nitidez en pantallas retina.
 - No se renderiza `UnisonCanvas`: aunque el script original contiene su rutina, el elemento objetivo no existe en su DOM y la representación fiel es no montarlo.
+
+## 2026-11-13 — Flujo de agenda
+
+- `/agendar` conserva el HeaderCC y la identidad original. `#seguimiento` representa el segundo paso para admitir enlaces directos y navegación Atrás/Adelante.
+- CSS y estado React existentes bastan para transición cruzada, reflejos y zoom; no se agregan dependencias de animación.
+- Los calendarios se configuran por separado en `bookingContent.ts`; una URL pendiente muestra un aviso y no utiliza un destino inventado.
+- Dos columnas en escritorio y paneles apilados por debajo de 701 px; pasos ocultos inertes y foco en encabezado al cambiar de paso.

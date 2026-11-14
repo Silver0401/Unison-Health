@@ -10,3 +10,11 @@
 - Se añadió redimensionado con DPR, listeners de movimiento reducido y limpieza de listeners/rAF al desmontar el componente.
 - Se eliminó `UnisonCanvas` del hero porque el HTML de referencia no tiene `#unison`; con ello las primeras cinco secciones recuperan sus offsets y altura de referencia.
 - Se generaron y revisaron 20 capturas Playwright en `docs/comparacion/`: original y React, al 0/25/50/75/100% para 1440x900 y 390x844.
+
+## 2026-11-13 — Agenda propia de Unison Health
+
+- Implementado `/agendar`: inicial/integral a la izquierda en azul, seguimiento a la derecha en blanco. Segundo paso con Diana a la izquierda e Ismael a la derecha.
+- Retrato de Ismael desde Descargas y foto existente de Diana a gran escala; vidrio, luz de hover, crossfade y soporte de movimiento reducido.
+- Actualizados los ocho enlaces de agenda y navegación interna desde la nueva ruta. Configuración central para tres URLs pendientes; diálogo de disponibilidad mientras están vacías.
+- Verificado build/TypeScript, flujo en escritorio/tablet/móvil, Enter/Escape, historial, foco y movimiento reducido. Capturas y prueba reproducible en [docs/agenda.md](docs/agenda.md).
+- Trabajo local, sin push ni deploy.

@@ -14,5 +14,12 @@
 
 ## Pendientes de producto
 
-- Reemplazar `AGENDA_URL` cuando exista el enlace final de calendarios.
+- Añadir las tres URLs definitivas en `src/library/Booking/bookingContent.ts` (inicial, seguimiento médico y nutricional).
 - Completar `PRIVACY_URL` y `COFEPRIS_PERMIT` en `landingContent.ts`; el pie los oculta mientras estén vacíos.
+
+## Agenda — 2026-11-13
+
+- Nueva ruta `/agendar`, dos pasos a pantalla completa y header compartido. Ocho enlaces de la landing actualizados.
+- Identidad Unison, vidrio, iluminación al hover, transición cruzada y retratos reales. Adaptación móvil, teclado y movimiento reducido verificados.
+- Build de producción y pruebas de navegador correctos; detalles y capturas en [docs/agenda.md](docs/agenda.md).
+- Sin push ni deploy; faltan las tres URLs finales.

@@ -1,4 +1,4 @@
-export const AGENDA_URL = "https://www.cronosmd.com/patientLanding";
+export const AGENDA_URL = "/agendar";
 // TODO: Completar cuando Cronos MD publique el aviso de privacidad.
 export const PRIVACY_URL = "";
 // TODO: Completar cuando Unison Health cuente con el permiso de publicidad COFEPRIS.
